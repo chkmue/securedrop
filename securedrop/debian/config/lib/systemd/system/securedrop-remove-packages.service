@@ -1,7 +1,7 @@
 [Unit]
 Description=Remove ufw/haveged if installed
-ConditionPathExists|=/usr/sbin/ufw
-ConditionPathExists|=/usr/sbin/haveged
+ConditionPathExists=|/usr/sbin/ufw
+ConditionPathExists=|/usr/sbin/haveged
 
 [Service]
 Type=exec
